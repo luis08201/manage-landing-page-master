@@ -302,8 +302,10 @@
         </ul>
       </nav>
       <form action="" class="footer__form">
-        <div class="footer__form--Item">
-          <input type="text" class="footer__form--input" placeholder="Updates in your inbox...">
+        <div class="footer__form--Item" id="inputBox">
+          <input id="email" type="email" class="footer__form--input" placeholder="Updates in your inbox...">
+          <i class="fa-solid fa-check footer__form--Item-check"></i>
+          <i class="fa-solid fa-xmark footer__form--Item-wrong"></i>
         </div>
         <div class="footer__form--Item">
           <button class="footer__form--btn" type="submit">Go</button>
@@ -324,19 +326,12 @@
       </div>
     </div>
   </footer>
-  <!--  
 
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="assets/js/swiper-bundle.js"></script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/sticky.js"></script>
   <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/validate.js"></script>
 </body>
 
 </html>

@@ -806,6 +806,40 @@
 
         &--Item {
             height: 45px;
+            transition: var(--animation);
+            position:relative;
+
+            &-check{
+                color:#5082bb;
+                position:absolute;
+                top:15px;
+                right:10px;
+                display:none;
+            }
+
+            &-wrong{
+                color: var(--Bright-Red);
+                    position: absolute;
+                    top: 15px;
+                    right: 10px;
+                    display: none;
+            }
+
+            &.valid{
+               outline:1px solid #5082bb;
+            }
+
+            &.valid &-check{
+                display:block;
+            }
+
+            &.invalid{
+                outline: 2px solid var(--Bright-Red);
+            }
+
+            &.invalid &-wrong{
+                display:block;
+            }
 
             &:nth-child(1) {
                 width: 76%;
@@ -823,7 +857,17 @@
             height: 100%;
             border: none;
             outline: none;
-            padding-left: 20px;
+            padding-left: 20px;      
+            
+            &.bgValid{
+                background-color:#5082bb93;
+                color:var(--white);
+            }
+
+            &.bgWrong{
+                 background-color: #f25f3a88;
+                 color:var(--white);
+            }
 
             &:hover,
             &:focus-visible {
