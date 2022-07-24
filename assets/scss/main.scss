@@ -300,6 +300,14 @@
             max-width: 700px;
             height: 700px;
         }
+
+        &__home {
+            margin-top: 116px;
+        }
+
+        &__topDesktop {
+            padding: 56px 0 25px;
+        }
     }
 }
 
@@ -510,6 +518,10 @@
             width: 95%;
             height: 600px;
         }
+
+        &__main {
+            padding-top: 147px;
+        }
     }
 }
 
@@ -590,14 +602,20 @@
     }
 
     @media screen and (min-width:1200px) {
+        padding-top: 154px;
+
         &__middle {
             &--description {
-                padding: 65px 30px 45px;
+                padding: 65px 20px 45px;
             }
 
             &--paragraph {
                 font-size: 0.85rem;
             }
+        }
+
+        &__bottom {
+            margin-bottom: 178px;
         }
     }
 }
@@ -849,16 +867,17 @@
 
     @media screen and (min-width:992px) {
         &__bottom {
-                &--main {
-                    padding-top: 50px;
-                }
+            &--main {
+                padding-top: 50px;
             }
+        }
+
         &__main {
             @include content-width;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 20% 30% 1fr 1fr 10%;
             grid-template-areas:
-            "footerLogo footerNav footerNav footerForm footerForm"
-            "footerSc footerNav footerNav footerCredits footerCredits";
+                "footerLogo footerNav footerNav footerForm footerForm"
+                "footerSc footerNav footerNav footerCredits footerCredits";
             gap: 35px;
         }
 
@@ -881,6 +900,7 @@
 
         &__credits {
             grid-area: footerCredits;
+            text-align: right;
         }
     }
 }
